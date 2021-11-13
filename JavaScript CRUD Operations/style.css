@@ -51,6 +51,7 @@ a {
 
 .validation-error {
   color: red;
+  margin-left: 5px;
 }
 
 div.submition {
