@@ -1,0 +1,58 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+thead>tr,
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  margin: 8px 0;
+  padding: 14px 20px;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ddd;
+}
+
+a {
+  margin-right: 4px;
+  color: #0000ee;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.validation-error {
+  color: red;
+}
+
+div.submition {
+  text-align: right
+}

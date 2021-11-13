@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pure JavaScript CRUD Operations with HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
+    <div>
+      <label>Name*</label>
+      <label class="validation-error hide" id="validationError">This field is required.</label>
+      <input type="text" name="empName" id="empName">
+    </div>
+    <div>
+      <label>Code</label>
+      <input type="text" name="empCode" id="empCode">
+    </div>
+    <div>
+      <label>Salary</label>
+      <input type="text" name="empSalary" id="empSalary">
+    </div>
+    <div>
+      <label>City</label>
+      <input type="text" name="empCity" id="empCity">
+    </div>
+    <div class="submition">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <table class="list" id="empList">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Salary</th>
+        <th>City</th>
+        <th>Controls</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
