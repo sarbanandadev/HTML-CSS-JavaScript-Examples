@@ -1,0 +1,104 @@
+:root {
+  --blue: #2E94E3;
+  --yellow: #F7DF1E;
+}
+
+svg.loader {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+svg.loader-default {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+svg.loader-default rect {
+  fill: var(--blue);
+}
+
+svg.loader-circle-small {
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  animation: rotate-circle-small 1s linear infinite;
+}
+
+svg.loader-circle-small circle {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  animation: animate-circle-small 2s ease-in-out infinite, color 2s ease-in-out infinite;
+}
+
+@keyframes rotate-circle-small {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes animate-circle-small {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -75
+  }
+
+  to {
+    stroke-dasharray: 100, 150;
+    stroke-dashoffset: -150
+  }
+}
+
+
+svg.loader-circle-big {
+  width: 100px;
+  height: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  animation: rotate-circle-big .45s linear infinite;
+}
+
+svg.loader-circle-big circle {
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-width: 10;
+  stroke: var(--blue);
+  stroke-linecap: round;
+  stroke-dasharray: 275;
+  transform: translate(5px, 5px);
+  animation: animate-circle-big 1s linear infinite;
+}
+
+@keyframes rotate-circle-big {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-circle-big {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 550;
+  }
+}
