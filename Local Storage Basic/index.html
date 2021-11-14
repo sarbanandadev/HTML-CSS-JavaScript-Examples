@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Storage Basic</title>
+</head>
+
+<body>
+  <h1>Save Data in Local Storage</h1>
+  <input type="text" id="input" value="SARBANANDA Dev">
+  <input type="button" onclick="save()" value="Save">
+  <p id="savedText"></p>
+  <p id="openedText"></p>
+  <script>
+    let input = document.getElementById('input')
+    let savedText = document.getElementById('savedText')
+    let openedText = document.getElementById('openedText')
+    let storageItem = localStorage.getItem('storedItem')
+
+    function save() {
+      let Item = input.value
+      localStorage.setItem('storedItem', Item)
+      savedText.innerHTML = `Saved: ${Item}`
+    }
+
+    (function get() {
+      localStorage.getItem('storedItem')
+      openedText.innerHTML = `Opened: ${storageItem}`
+    })()
+  </script>
+</body>
+
+</html>
