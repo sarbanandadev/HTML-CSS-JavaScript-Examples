@@ -2,7 +2,7 @@ const ldrDefault = document.querySelector('.loader-default')
 const ldrSmallCircle = document.querySelector('.loader-circle-small')
 const ldrBigCircle = document.querySelector('.loader-circle-big')
 
-const loader = 2
+const loader = null
 switch (loader) {
   case 1:
     ldrSmallCircle.innerHTML = `<circle cx="25" cy="25" r="25"></circle>`

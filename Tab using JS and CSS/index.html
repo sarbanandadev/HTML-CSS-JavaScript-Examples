@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab using JS and CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul class="tabs">
+    <li class="tab-btn" onclick="openTab(event, 'Vinaya')" id="tabActive">Vinaya</li>
+    <li class="tab-btn" onclick="openTab(event, 'Sutta')">Sutta</li>
+    <li class="tab-btn" onclick="openTab(event, 'Abhidhamma')">Abhidhamma</li>
+  </ul>
+  <div class="tab-content" id="Vinaya">
+    <h3>The Basket of the Discipline</h3>
+    <p>The Vinaya Pitaka, the first division of the Tipitaka, is the textual framework upon which the monastic community (Sangha) is built. It includes not only the rules governing the life of every Theravada bhikkhu (monk) and bhikkhuni (nun), but also a host of procedures and conventions of etiquette that support harmonious relations, both among the monastics themselves, and between the monastics and their lay supporters, upon whom they depend for all their material needs.</p>
+  </div>
+  <div class="tab-content" id="Sutta">
+    <h3>The Basket of Suttas</h3>
+    <p>The Sutta Pitaka, the second division of the Tipitaka, consists of more than 10,000 suttas (discourses) delivered by the Buddha and his close disciples during and shortly after the Buddha's forty-five year teaching career, as well as many additional verses by other members of the Sangha. More than one thousand sutta translations are available on this website.</p>
+  </div>
+  <div class="tab-content" id="Abhidhamma">
+    <h3>The Basket of Abhidhamma</h3>
+    <p>The seven books of the Abhidhamma Pitaka, the third division of the Tipitaka, offer an extraordinarily detailed analysis of the basic natural principles that govern mental and physical processes. Whereas the Sutta and Vinaya Pitakas lay out the practical aspects of the Buddhist path to Awakening, the Abhidhamma Pitaka provides a theoretical framework to explain the causal underpinnings of that very path. In Abhidhamma philosophy the familiar psycho-physical universe (our world of "trees" and "rocks," "I" and "you") is distilled to its essence: an intricate web of impersonal phenomena and processes unfolding at an inconceivably rapid pace from moment to moment, according to precisely defined natural laws.</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

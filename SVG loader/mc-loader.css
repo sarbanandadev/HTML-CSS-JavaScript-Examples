@@ -1,0 +1,53 @@
+svg.mc-loader {
+  max-width: 50px;
+  animation: mc-loader-turn 1s linear infinite;
+}
+
+svg.mc-loader circle {
+  animation: mc-stroke 4s linear infinite;
+  fill: none;
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+svg.mc-loader circle:nth-child(1) {
+  stroke: rgb(66, 133, 244);
+}
+
+svg.mc-loader circle:nth-child(2) {
+  stroke: rgb(251, 188, 5);
+  animation-delay: 1s;
+}
+
+svg.mc-loader circle:nth-child(3) {
+  stroke: rgb(52, 168, 83);
+  animation-delay: 2s;
+}
+
+svg.mc-loader circle:nth-child(4) {
+  stroke: rgb(234, 67, 53);
+  animation-delay: 3s;
+}
+
+@keyframes mc-loader-turn {
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes mc-stroke {
+  12.5% {
+    stroke-dashoffset: 0;
+  }
+
+  25%,
+  100% {
+    stroke-dashoffset: 63;
+  }
+}
