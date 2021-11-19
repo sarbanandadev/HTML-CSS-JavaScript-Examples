@@ -1,6 +1,6 @@
 @font-face {
   font-family: NotoSerifBengali-Bold;
-  src: url(NotoSerifBengali-Bold.ttf);
+  src: url(NotoSerifBengali-Bold.ttf), url(CharuChandan3D.ttf);
 }
 
 body {
