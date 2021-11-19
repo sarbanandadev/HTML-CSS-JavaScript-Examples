@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SARBANANDA Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Learn JavaScript with SARBANANDA Dev</h1>
+    <div class="row">
+      <div class="col-1">
+        <div class="input-panel">
+          <lebel>Enter All Names</lebel>
+          <textarea id="input" rows="14" cols="50"></textarea>
+        </div>
+        <div class="output-panel">
+          <button class="show-participant-btn">Show All Participants</button>
+          <div class="participant-panel">
+            <ul class="name-list" id="name-list"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <lebel>Output Display</lebel>
+          <div class="display-panel">
+            <h2 id="display">Display</h2>
+          </div>
+        </div>
+        <div class="center">
+          <button class="give-a-try-btn" id="give-a-try">Give a Try</button>
+        </div>
+        <div class="card">
+          <ul class="winner-panel">
+            <li class="winner-list-item">
+              <strong>First Winner: <span id="first-position"></span></strong>
+            </li>
+            <li class="winner-list-item">
+              <strong>Second Winner: <span id="second-position"></span></strong>
+            </li>
+            <li class="winner-list-item">
+              <strong>Third Winner: <span id="third-position"></span></strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

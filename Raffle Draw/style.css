@@ -1,0 +1,213 @@
+.title {
+    margin-top: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+}
+
+.col-1,
+.col-2 {
+    width: 50%;
+    margin: 10px 2.5%;
+    margin: 25px;
+}
+
+lebel {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.input-panel textarea {
+    width: 94.5%;
+    height: 250px;
+    padding: 10px 2.5%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.output-panel {
+    display: inline;
+    border-radius: 5px;
+    position: relative;
+    background: red
+}
+
+.show-participant-btn {
+    padding: 10px 5%;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: rgb(242, 242, 242);
+    background: rgb(66, 133, 244);
+    border: 2px solid rgb(160, 195, 255);
+}
+
+.participant-panel {
+    top: 0%;
+    left: 50%;
+    width: 99%;
+    margin-top: 12px;
+    margin-left: -50%;
+    position: relative;
+    display: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.participant-panel ul,
+.winner-panel ul {
+    margin: 0;
+    padding: 10px 5%;
+    list-style: none;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.participant-panel li,
+.winner-panel li {
+    display: block;
+    font-size: 20px;
+    padding: 10px 5%;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: 0;
+}
+
+.participant-panel li:first-child,
+.winner-panel li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.participant-panel li:last-child,
+.winner-panel li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.output-panel:hover .participant-panel {
+    display: block;
+}
+
+.output-panel:hover .show-participant-btn {
+    color: rgb(255, 255, 255);
+    background: rgb(66, 133, 244);
+}
+
+.output-panel li:hover {
+    background: rgb(66, 133, 244);
+}
+
+
+.display-panel {
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.give-a-try-btn {
+    padding: 12px 5%;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: rgb(242, 242, 242);
+    background: rgb(15, 157, 88);
+    border: 2px solid rgb(23, 207, 169);
+
+}
+
+.winner-panel {
+    padding: 10px 5%;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Media Query for Mobile Devices */
+    body {
+        background-color: lightgray;
+    }
+}
