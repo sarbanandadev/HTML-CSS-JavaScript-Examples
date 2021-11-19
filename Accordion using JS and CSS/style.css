@@ -1,0 +1,46 @@
+.acc-btn {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: rgba(66, 133, 244, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.acc-btn:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.acc-active {
+  font-weight: 400;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.acc-active:after {
+  content: "\2212";
+}
+
+.acc-panel {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  transition: max-height .3s ease-out;
+}

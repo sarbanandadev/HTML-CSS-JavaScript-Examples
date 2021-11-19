@@ -1,0 +1,72 @@
+body {
+    background: rgba(0,0,0,0.1)
+}
+
+.slider-heading {
+    color: rgb(66,133,244);
+    font-weight: 300;
+    text-align: center;
+}
+.slider {
+    width: 95%; 
+    height: 500px; 
+    margin: auto;
+    padding: 0; 
+    position: relative; 
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: auto 10%;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(66,133,244);
+    background: rgb(255,255,255);
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.slide-img {
+    width: 100px;
+    height: 100px;
+    fill: rgb(66,133,244);
+}
+.slide-caption {
+    font-weight: 300;
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+}
+.slide-text {
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 3rem;
+    max-width: 300px;
+}
+.slide:nth-child(1) {animation-name: slide-1;}
+@keyframes slide-1 {
+    0%, 8.3% {right: -100%; opacity: 0;}
+    8.3%, 25% {right: 0%; opacity: 1;}
+    33.33%, 100% {right: 100%; opacity: 0;}
+}
+.slide:nth-child(2) {animation-name: slide-2;}
+@keyframes slide-2 {
+    0%, 33.33% {right: -100%; opacity: 0;}
+    41.63%, 58.29% {right: 0%; opacity: 1;}
+    66.66%, 100% {right: 100%; opacity: 0;}
+}
+.slide:nth-child(3) {animation-name: slide-3;}
+@keyframes slide-3 {
+    0%, 66.66% {right: -100%; opacity: 0;}
+    74.96%, 91.62% {right: 0%; opacity: 1;}
+    100% {right: 100%; opacity: 0;}
+}
