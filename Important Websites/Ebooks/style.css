@@ -1,0 +1,14 @@
+div>a>img {
+  width: 150px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+div>a>h1,
+div>a>p {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 3px;
+}
