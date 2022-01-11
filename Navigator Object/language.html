@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    const getLanguage = () => {
+      let nl = navigator.language
+      return nl = 'en-GB' ? "English" :
+        nl = "bn-IN" ? "Bangla (India)" :
+        nl = "bn-BD" ? "Bangla (Bangladesh)" :
+        nl = "hi-IN" ? "Hindi (India)" :
+        nl = "en-US" ? "English (US)" :
+        navigator.languages.join(', ')
+    }
+    console.log(`Your Device Language is ${getLanguage()}`)
+  </script>
+</body>
+
+</html>
