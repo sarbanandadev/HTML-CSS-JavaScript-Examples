@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Prefix Detection</title>
+  <script>
+    // CREDITS https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769
+    window.addEventListener("load", () => {
+      // OPERA 8.0+
+      var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+      // FIREFOX 1.0+
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+
+      // SAFARI 3.0+
+      var isSafari = /constructor/i.test(window.HTMLElement) || (function(p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+      // INTERNET EXPLORER 6-11
+      var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+
+      // EDGE 20+
+      var isEdge = !isIE && !!window.StyleMedia;
+
+      // CHROME 1+
+      var isChrome = !!window.chrome;
+
+      // BLINK ENGINE DETECTION
+      var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+      console.log("Opera - " + isOpera);
+      console.log("Firefox - " + isFirefox);
+      console.log("Safari - " + isSafari);
+      console.log("IE - " + isIE);
+      console.log("Edge - " + isEdge);
+      console.log("Chrome - " + isChrome);
+      console.log("Blink - " + isBlink);
+    });
+  </script>
+</head>
+
+<body></body>
+
+</html>

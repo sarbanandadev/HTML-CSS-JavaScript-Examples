@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bowser Library</title>
+  <!-- (A) LOAD BOWSER -->
+  <script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js"></script>
+  <script>
+    // (B) DETECT BROWSER
+    // https://github.com/lancedikson/bowser
+    // https://www.jsdelivr.com/package/npm/bowser
+    window.addEventListener("load", () => {
+      // (B1) PARSE USER AGENT
+      var result = bowser.getParser(navigator.userAgent).getResult();
+
+      // (B2) BROWSER INFO
+      console.log(result.browser.name);
+      console.log(result.browser.version);
+      console.log(result.engine);
+
+      // (B3) OPERATING SYSTEM
+      console.log(result.os.name);
+      console.log(result.os.version);
+      console.log(result.os.versionName);
+
+      // (B4) PLATFORM
+      console.log(result.platform.type);
+    });
+  </script>
+</head>
+
+<body></body>
+
+</html>

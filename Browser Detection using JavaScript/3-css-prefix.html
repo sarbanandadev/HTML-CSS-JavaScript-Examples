@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Prefix Detection</title>
+  <script>
+    // CREDITS : https://davidwalsh.name/vendor-prefix
+    window.addEventListener("load", () => {
+      var prefix = (Array.prototype.slice
+        .call(window.getComputedStyle(document.documentElement, ""))
+        .join("")
+        .match(/-(moz|webkit|ms)-/))[1];
+
+      // MOZ - FIREFOX (GECKO ENGINE)
+      // WEBKIT - CHROME, SAFARI, OPERA (WEBKIT ENGINE)
+      // MS - INTERNET EXPLORER & EDGE (TRIDENT ENGINE)
+      // NOTE - OLD OPERA VERSIONS USE PRESTO ENGINE. PREFIX IS -O
+      console.log(prefix);
+    });
+  </script>
+</head>
+
+<body></body>
+
+</html>
