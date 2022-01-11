@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copying Texts in Clipboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <textarea id="copyText" cols="60" rows="5">Welcome to CodingNepal. CodingNepal is a channel where you can learn HTML, CSS, and Javascript tutorials along with creative CSS Animations and Effects. We provide free resources to inspire design-focused frontend developers. Improve your coding skills with our free programs and video tutorials.</textarea>
+    <br />
+    <div class="btn">
+      <button>copy in clipboard</button><span class="tooltip">copied</span>
+    </div>
+    <textarea cols="60" id="pasteText" placeholder="Paste your copied content here.." rows="5"></textarea>
+  </div>
+  <script>
+    const copyText = document.querySelector("#copyText");
+    const pasteText = document.querySelector("#pasteText");
+    const button = document.querySelector("button");
+    const tooltip = document.querySelector(".tooltip");
+    button.addEventListener('click', function() {
+      copyText.select();
+      pasteText.value = "";
+      tooltip.classList.add("show");
+      setTimeout(function() {
+        tooltip.classList.remove("show");
+      }, 700);
+      if (document.execCommand("copy")) {
+        pasteText.focus();
+      } else {
+        alert("Something went wrong!");
+      }
+    });
+  </script>
+</body>
+
+</html>
