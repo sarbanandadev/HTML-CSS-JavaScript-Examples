@@ -1,0 +1,42 @@
+* {
+  box-sizing: 0;
+  font-weight: 300;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+table {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+tr,
+td {
+  text-align: left;
+}
+
+input {
+  width: 150px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.copyright {
+  margin-top: 100px;
+  display: block;
+  text-decoration: none;
+}

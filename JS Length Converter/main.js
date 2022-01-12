@@ -1,13 +1,14 @@
+const Feet = document.getElementById("Feet");
+const Meters = document.getElementById("Meters");
+const Inches = document.getElementById("Inches");
+const Centimeters = document.getElementById("Centimeters");
+const Yeards = document.getElementById("Yeards");
+const Kilometers = document.getElementById("Kilometers");
+const Miles = document.getElementById("Miles");
+
+
 function lengthConverter(source, valNum) {
   valNum = parseFloat(valNum);
-  var Feet = document.getElementById("Feet");
-  var Meters = document.getElementById("Meters");
-  var Inches = document.getElementById("Inches");
-  var Centimeters = document.getElementById("Centimeters");
-  var Yeards = document.getElementById("Yeards");
-  var Kilometers = document.getElementById("Kilometers");
-  var Miles = document.getElementById("Miles");
-
   if (source == "Feet") {
     Meters.value = (valNum / 3.2808).toFixed(2);
     Inches.value = (valNum * 12).toFixed(2);

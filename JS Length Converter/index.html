@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JavaScript Length Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h2>Length Converter</h2>
   <p>Type a value in any of the fields to convert between Length measurements:</p>
   <table>
-    <td>Feet</td>
-    <td><input id="Feet" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)"></td>
+    <tr>
+      <td>Feet</td>
+      <td><input id="Feet" type="number" placeholder="Feet" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)"></td>
     </tr>
     <tr>
       <td>Meters</td>
@@ -39,6 +41,7 @@
       <td><input id="Miles" type="number" placeholder="Miles" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)"></td>
     </tr>
   </table>
+  <a class="copyright" href="https://github.com/sarbanandadev">© SarbaNanda Dev</a>
   <script src="main.js"></script>
 </body>
 
