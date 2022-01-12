@@ -1,18 +1,62 @@
+* {
+  box-sizing: 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+form {
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form div:nth-child(3),
+form div:nth-child(4) {
+  width: 47.5%;
+  margin: -2px;
+  display: inline-block;
+}
+
+form div:nth-child(4) {
+  margin-left: 5%;
+}
+
+form div label {
+  display: inline;
+  font-size: 16px;
+}
+
+form div input {
+  border: 1px solid #ccc;
+}
+
+
 table {
   width: 100%;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   border-collapse: collapse;
 }
 
 td,
 th {
+  max-width: 15%;
+  overflow-y: scroll;
   padding: 8px;
   text-align: left;
-  border: 1px solid #dddddd;
 }
 
 thead>tr,
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 input[type=text],

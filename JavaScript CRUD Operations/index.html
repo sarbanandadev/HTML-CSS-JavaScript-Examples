@@ -9,11 +9,16 @@
 </head>
 
 <body>
+  <h1>Pure JavaScript CRUD Operations with HTML</h1>
   <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
     <div>
       <label>Name*</label>
       <label class="validation-error hide" id="validationError">This field is required.</label>
       <input type="text" name="empName" id="empName">
+    </div>
+    <div>
+      <label>City</label>
+      <input type="text" name="empCity" id="empCity">
     </div>
     <div>
       <label>Code</label>
@@ -22,10 +27,6 @@
     <div>
       <label>Salary</label>
       <input type="text" name="empSalary" id="empSalary">
-    </div>
-    <div>
-      <label>City</label>
-      <input type="text" name="empCity" id="empCity">
     </div>
     <div class="submition">
       <input type="submit" value="Submit">

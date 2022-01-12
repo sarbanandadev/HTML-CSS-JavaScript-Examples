@@ -1,10 +1,10 @@
-let empName = document.querySelector('#empName'),
-  empCode = document.querySelector('#empCode'),
-  empSalary = document.querySelector('#empSalary'),
-  empCity = document.querySelector('#empCity'),
-  empList = document.querySelector('#empList'),
-  validationError = document.querySelector('#validationError'),
-  selectedRow = null
+const empName = document.querySelector('#empName');
+const empCity = document.querySelector('#empCity');
+const empCode = document.querySelector('#empCode');
+const empSalary = document.querySelector('#empSalary');
+const empList = document.querySelector('#empList');
+const validationError = document.querySelector('#validationError');
+let selectedRow = null
 
 function onFormSubmit() {
   if (validate()) {
